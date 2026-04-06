@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+        <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <title>seatwork#2</title>
+    </head>
+    <body>
+        <div class="container" id="header">
+            <h1>Grade 10 Classmates System</h1>
+            <p>Add and view your classmates easily.</p>
+        </div>
+        <div class="container" id="form">
+            <form>
+                <label for="name">Enter your fullname:</label>
+                <input class="form-control" type="text" id="name" placeholder="Enter your fullname">
+                <br>
+                <label for="section">Enter your section:</label>
+                <input class="form-control" type="text" id="section" placeholder="Enter your section">
+                <br>
+                <label for="subject">Enter your favourite subject:</label>
+                <input class="form-control" type="text" id="subject" placeholder="Enter your favourite subject">
+                <br>
+                <div id="btn-group">
+                    <button type="button" class="btn" id="add-classmate" py-click="addClassmate">Add Classmate</button>
+                    <button type="button" class="btn" id="show-list" py-click="showList">Show List</button>
+                </div>
+            </form>
+        </div>
+        <div class="container" id="list">
+            <h4>Classmate List</h4>
+            <div id="output"></div>
+        </div>
+        <py-script src="main.py"></py-script>
+        
+    </body>
+</html>
